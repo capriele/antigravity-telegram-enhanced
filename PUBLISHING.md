@@ -7,7 +7,7 @@ Marketplace identity: `capriele.antigravity-telegram-enhanced`
 1. Create or select publisher `capriele` in Visual Studio Marketplace.
 2. Open the publisher management page.
 3. Choose **New extension > Visual Studio Code**.
-4. Upload `antigravity-telegram-enhanced-1.4.0.vsix`.
+4. Upload `antigravity-telegram-enhanced-1.4.1.vsix`.
 5. Review the Marketplace preview and publish.
 
 ## Future releases

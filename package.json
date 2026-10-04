@@ -2,7 +2,7 @@
   "name": "antigravity-telegram-enhanced",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "publisher": "capriele",
   "license": "MIT",
   "engines": {

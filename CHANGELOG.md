@@ -2,13 +2,15 @@
 
 All notable changes to Antigravity Telegram Enhanced are documented here.
 
-## 1.4.0
+## 1.4.1
 
+- Refactored the monolithic runtime into maintainable modules for Telegram, Antigravity RPC, terminal execution, i18n, logging, and shared utilities.
+- Added `ARCHITECTURE.md` documenting module responsibilities.
 - Prepared the project as an independent Marketplace extension under publisher `capriele`.
 - Changed the Marketplace extension ID to `capriele.antigravity-telegram-enhanced`.
 - Updated repository, homepage, issues, Marketplace description, keywords, and attribution.
 - Added Marketplace-focused documentation and security guidance.
-- Fixed VSIX/package version metadata so all manifests consistently report 1.4.0.
+- Fixed VSIX/package version metadata so all manifests consistently report 1.4.1.
 
 ## 1.3.0
 
