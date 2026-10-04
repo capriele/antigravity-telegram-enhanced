@@ -1,0 +1,21 @@
+{
+  "displayName": "Antigravity Telegram Enhanced",
+  "description": "Controlla Antigravity da Telegram, seleziona conversazioni specifiche e usa inglese o italiano.",
+  "category": "Antigravity Telegram Enhanced",
+  "command.start": "Avvia bot Telegram",
+  "command.stop": "Arresta bot Telegram",
+  "command.status": "Mostra stato del bot",
+  "command.settings": "Apri impostazioni",
+  "command.test": "Invia messaggio di test su Telegram",
+  "config.title": "Antigravity con Telegram",
+  "config.language": "Lingua dell'estensione e lingua Telegram predefinita. L'inglese è predefinito; ogni chat può cambiarla con /language en|it.",
+  "config.autoStart": "Avvia automaticamente il bot Telegram all'apertura dell'IDE.",
+  "config.token": "Token API del bot Telegram ottenuto da @BotFather.",
+  "config.chatId": "Chat ID Telegram autorizzato a controllare l'IDE. Lascia vuoto se usi uno username autorizzato.",
+  "config.username": "Username Telegram (senza @) autorizzato a controllare l'IDE.",
+  "config.terminalEnabled": "Consenti /run da Telegram per i soli comandi esplicitamente autorizzati. Disabilitato per impostazione predefinita.",
+  "config.terminalAllowed": "Prefissi di comando non privilegiati autorizzati per /run. L’esecuzione avviene senza shell.",
+  "config.terminalSudo": "Prefissi privilegiati autorizzati. /run sudo usa sempre sudo -n e richiede una regola sudoers NOPASSWD già configurata; le password non vengono accettate o memorizzate.",
+  "config.terminalTimeout": "Timeout massimo in secondi per un comando remoto (1–300).",
+  "config.terminalMaxOutput": "Numero massimo di caratteri stdout/stderr restituiti su Telegram (1.000–30.000)."
+}

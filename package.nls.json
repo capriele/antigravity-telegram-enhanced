@@ -1,0 +1,21 @@
+{
+  "displayName": "Antigravity Telegram Enhanced",
+  "description": "Control Antigravity from Telegram, target specific conversations, and use English or Italian.",
+  "category": "Antigravity Telegram Enhanced",
+  "command.start": "Start Telegram Bot",
+  "command.stop": "Stop Telegram Bot",
+  "command.status": "Show Bot Status",
+  "command.settings": "Open Settings",
+  "command.test": "Send Test Message to Telegram",
+  "config.title": "Antigravity With Telegram",
+  "config.language": "Extension and default Telegram language. English is the default; each Telegram chat can override it with /language en|it.",
+  "config.autoStart": "Automatically start the Telegram bot when the IDE opens.",
+  "config.token": "Telegram Bot API token from @BotFather.",
+  "config.chatId": "Telegram Chat ID allowed to control the IDE. Leave empty if using an allowed username.",
+  "config.username": "Telegram username (without @) allowed to control the IDE.",
+  "config.terminalEnabled": "Allow Telegram /run for explicitly permitted commands only. Disabled by default.",
+  "config.terminalAllowed": "Allowed non-privileged command prefixes for /run. Commands execute without a shell.",
+  "config.terminalSudo": "Allowed privileged command prefixes. /run sudo always uses sudo -n and requires a preconfigured sudoers NOPASSWD rule; passwords are never accepted or stored.",
+  "config.terminalTimeout": "Maximum remote command timeout in seconds (1–300).",
+  "config.terminalMaxOutput": "Maximum stdout/stderr characters returned to Telegram (1,000–30,000)."
+}

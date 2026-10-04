@@ -1,0 +1,173 @@
+{
+  "name": "antigravity-telegram-enhanced",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "version": "1.4.0",
+  "publisher": "capriele",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Chat",
+    "Machine Learning",
+    "Other"
+  ],
+  "keywords": [
+    "antigravity",
+    "telegram",
+    "remote",
+    "ai-assistant",
+    "remote-control",
+    "italian",
+    "localization",
+    "conversation",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capriele/antigravity-telegram-enhanced"
+  },
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:antigravity-with-telegram.start"
+  ],
+  "main": "./out/extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity-with-telegram.start",
+        "title": "%command.start%",
+        "category": "%category%"
+      },
+      {
+        "command": "antigravity-with-telegram.stop",
+        "title": "%command.stop%",
+        "category": "%category%"
+      },
+      {
+        "command": "antigravity-with-telegram.status",
+        "title": "%command.status%",
+        "category": "%category%"
+      },
+      {
+        "command": "antigravity-with-telegram.openSettings",
+        "title": "%command.settings%",
+        "category": "%category%"
+      },
+      {
+        "command": "antigravity-with-telegram.testMessage",
+        "title": "%command.test%",
+        "category": "%category%"
+      }
+    ],
+    "configuration": {
+      "title": "%config.title%",
+      "properties": {
+        "antigravityWithTelegram.language": {
+          "type": "string",
+          "enum": [
+            "en",
+            "it"
+          ],
+          "enumDescriptions": [
+            "English",
+            "Italiano"
+          ],
+          "default": "en",
+          "description": "%config.language%",
+          "order": 0
+        },
+        "antigravityWithTelegram.autoStart": {
+          "type": "boolean",
+          "default": false,
+          "description": "%config.autoStart%",
+          "order": 1
+        },
+        "antigravityWithTelegram.telegramToken": {
+          "type": "string",
+          "default": "",
+          "description": "%config.token%",
+          "order": 2
+        },
+        "antigravityWithTelegram.telegramChatId": {
+          "type": "string",
+          "default": "",
+          "description": "%config.chatId%",
+          "order": 3
+        },
+        "antigravityWithTelegram.telegramAllowedUsername": {
+          "type": "string",
+          "default": "",
+          "description": "%config.username%",
+          "order": 4
+        },
+        "antigravityWithTelegram.terminalCommandsEnabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "%config.terminalEnabled%",
+          "order": 5
+        },
+        "antigravityWithTelegram.terminalAllowedCommands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "pwd",
+            "git status",
+            "git diff --stat"
+          ],
+          "description": "%config.terminalAllowed%",
+          "order": 6
+        },
+        "antigravityWithTelegram.terminalAllowedSudoCommands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "%config.terminalSudo%",
+          "order": 7
+        },
+        "antigravityWithTelegram.terminalTimeoutSeconds": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 300,
+          "default": 30,
+          "description": "%config.terminalTimeout%",
+          "order": 8
+        },
+        "antigravityWithTelegram.terminalMaxOutputChars": {
+          "type": "number",
+          "minimum": 1000,
+          "maximum": 30000,
+          "default": 12000,
+          "description": "%config.terminalMaxOutput%",
+          "order": 9
+        }
+      }
+    }
+  },
+  "homepage": "https://github.com/capriele/antigravity-telegram-enhanced#readme",
+  "bugs": {
+    "url": "https://github.com/capriele/antigravity-telegram-enhanced/issues"
+  },
+  "pricing": "Free",
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "vscode:prepublish": "npm run compile",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.6.0",
+    "typescript": "^5.8.0"
+  }
+}
